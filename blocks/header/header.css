@@ -4,7 +4,6 @@ header .nav-wrapper {
     width: 100%;
     z-index: 2;
     position: fixed;
-    border-bottom: 1px solid var(--color-border);
 }
 
 header nav {
@@ -14,11 +13,11 @@ header nav {
         'hamburger brand tools' var(--nav-height)
         'sections sections sections' 1fr / auto 1fr auto;
     align-items: center;
-    gap: 0 var(--spacing-s);
+    gap: 0 var(--spacing-m);
     margin: auto;
-    max-width: calc(var(--content-max-width) + var(--spacing-m) * 2);
+    max-width: var(--content-max-width);
     height: var(--nav-height);
-    padding: 0 var(--spacing-s);
+    padding: 10px var(--content-padding);
     font-family: var(--body-font-family);
 }
 
@@ -35,8 +34,8 @@ header nav[aria-expanded='true'] {
     header nav {
         display: flex;
         justify-content: space-between;
-        gap: 0 var(--spacing-m);
-        padding: 0 var(--spacing-m);
+        gap: 0 var(--spacing-l);
+        padding: 0 var(--content-padding);
     }
 
     header nav[aria-expanded='true'] {
@@ -56,8 +55,7 @@ header nav a:any-link {
 }
 
 header nav a:hover {
-    color: var(--color-accent);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* hamburger */
@@ -79,6 +77,7 @@ header nav .nav-hamburger button {
     overflow: initial;
     text-overflow: initial;
     white-space: initial;
+    min-width: unset;
 }
 
 header nav .nav-hamburger-icon,
@@ -146,7 +145,7 @@ header .nav-brand {
     grid-area: brand;
     flex-basis: 128px;
     font-size: var(--heading-font-size-s);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 1;
 }
 
@@ -176,7 +175,7 @@ header nav .nav-sections ul {
 }
 
 header nav .nav-sections ul > li {
-    font-weight: 500;
+    font-weight: var(--font-weight-regular);
 }
 
 header nav .nav-sections ul > li > ul {
@@ -184,7 +183,7 @@ header nav .nav-sections ul > li > ul {
 }
 
 header nav .nav-sections ul > li > ul > li {
-    font-weight: 400;
+    font-weight: var(--font-weight-regular);
 }
 
 @media (width >= 1024px) {
@@ -226,7 +225,7 @@ header nav .nav-sections ul > li > ul > li {
 
     header nav .nav-sections ul {
         display: flex;
-        gap: var(--spacing-s);
+        gap: var(--spacing-l);
         margin: 0;
     }
 
@@ -243,14 +242,14 @@ header nav .nav-sections ul > li > ul > li {
     header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
         display: block;
         position: absolute;
-        left: -24px;
+        left: -16px;
         width: 220px;
         top: 150%;
-        padding: var(--spacing-xs);
-        background-color: var(--background-color);
+        padding: var(--spacing-m);
+        background-color: var(--color-surface);
         border: 1px solid var(--color-border);
         border-radius: var(--border-radius-m);
-        box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+        box-shadow: 0 4px 12px var(--color-shadow);
         white-space: initial;
     }
 
@@ -263,7 +262,7 @@ header nav .nav-sections ul > li > ul > li {
         height: 0;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-bottom: 8px solid var(--background-color);
+        border-bottom: 8px solid var(--color-surface);
     }
 
     header nav .nav-sections .default-content-wrapper > ul > li > ul > li {

@@ -11,89 +11,112 @@
  */
 
 :root {
-  /* colors — HP palette */
+  /* colors — HP Design System (extracted) */
   --background-color: #fff;
-  --light-color: #f4f4f4;
-  --dark-color: #2d2d2d;
-  --text-color: #0d0d0d;
-  --link-color: #0096d6;
-  --link-hover-color: #007ab8;
-  --color-accent: #0096d6;
-  --color-accent-dark: #007ab8;
-  --color-sale: #c4122f;
+  --light-color: #f5f5f5;
+  --dark-color: #1a1a1a;
+  --text-color: #1a1a1a;
+  --text-color-secondary: #3d3d3d;
+  --text-color-tertiary: #636363;
+  --link-color: #024ad8;
+  --link-hover-color: #103fb2;
+  --color-accent: #024ad8;
+  --color-accent-hover: #103fb2;
+  --color-accent-active: #0e3191;
+  --color-accent-bg: #e4eefa;
+  --color-sale: #1a1a1a;
   --color-success: #00875a;
   --color-nav-bg: #fff;
-  --color-nav-text: #0d0d0d;
-  --color-footer-bg: #2d2d2d;
+  --color-nav-text: #1a1a1a;
+  --color-footer-bg: #1a1a1a;
   --color-footer-text: #fff;
-  --color-border: #e0e0e0;
+  --color-border: #e8e8e8;
+  --color-border-hover: #c2c2c2;
+  --color-border-strong: #858585;
+  --color-surface: #fff;
+  --color-surface-hover: #f5f5f5;
+  --color-overlay: rgb(26 26 26 / 50%);
+  --color-shadow: rgb(26 26 26 / 20%);
+  --color-focus: #0e3191;
+  --color-focus-outline: #ccdef5;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto, roboto-fallback, sans-serif;
+  /* fonts — HP uses forma-djr-micro */
+  --body-font-family: forma-djr-micro, roboto, roboto-fallback, sans-serif;
+  --heading-font-family: forma-djr-micro, roboto, roboto-fallback, sans-serif;
+
+  /* font weights — HP Design System */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 
   /* body sizes */
+  --body-font-size-l: 18px;
   --body-font-size-m: 16px;
   --body-font-size-s: 14px;
   --body-font-size-xs: 12px;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 36px;
-  --heading-font-size-l: 28px;
-  --heading-font-size-m: 22px;
-  --heading-font-size-s: 18px;
-  --heading-font-size-xs: 16px;
+  /* heading sizes — mobile first */
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 24px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 18px;
+  --heading-font-size-s: 16px;
+  --heading-font-size-xs: 14px;
 
-  /* spacing */
+  /* spacing — HP Design System */
   --spacing-xxl: 80px;
-  --spacing-xl: 64px;
-  --spacing-l: 48px;
-  --spacing-m: 32px;
-  --spacing-s: 24px;
-  --spacing-xs: 16px;
-  --spacing-xxs: 8px;
+  --spacing-xl: 36px;
+  --spacing-l: 32px;
+  --spacing-m: 16px;
+  --spacing-s: 12px;
+  --spacing-xs: 10px;
+  --spacing-xxs: 6px;
 
-  /* border radius */
+  /* border radius — HP uses 8px for interactive elements */
   --border-radius-s: 4px;
   --border-radius-m: 8px;
   --border-radius-l: 16px;
   --border-radius-pill: 100px;
 
   /* layout */
-  --content-max-width: 1200px;
-  --nav-height: 64px;
+  --content-max-width: 1680px;
+  --content-padding: 16px;
+  --nav-height: 68px;
+  --grid-gap: 10px;
 }
 
 /* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
 @font-face {
   font-family: roboto-fallback;
   size-adjust: 99.529%;
   src: local('Arial');
 }
 
+@font-face {
+  font-family: forma-djr-micro-fallback;
+  size-adjust: 95%;
+  src: local('Arial');
+}
+
 @media (width >= 768px) {
   :root {
+    --body-font-size-l: 18px;
     --body-font-size-m: 16px;
-    --body-font-size-s: 14px;
-    --body-font-size-xs: 12px;
+    --content-padding: 36px;
   }
 }
 
 @media (width >= 1024px) {
   :root {
+    /* heading sizes — desktop */
     --heading-font-size-xxl: 56px;
-    --heading-font-size-xl: 40px;
+    --heading-font-size-xl: 44px;
     --heading-font-size-l: 32px;
     --heading-font-size-m: 24px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
+    --nav-height: 48px;
   }
 }
 
@@ -104,7 +127,8 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-weight: var(--font-weight-regular);
+  line-height: 24px;
 }
 
 body.appear {
@@ -134,8 +158,8 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
   scroll-margin: 40px;
 }
 
@@ -163,14 +187,14 @@ pre {
 
 pre {
   padding: 16px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-m);
   background-color: var(--light-color);
   overflow-x: auto;
   white-space: pre;
 }
 
 main > div {
-  margin: var(--spacing-m) var(--spacing-xs);
+  margin: var(--spacing-l) var(--content-padding);
 }
 
 input,
@@ -182,13 +206,13 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
+  color: var(--text-color);
+  text-decoration: underline;
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: var(--text-color);
   text-decoration: underline;
 }
 
@@ -196,20 +220,24 @@ a:hover {
 a.button:any-link,
 button {
   box-sizing: border-box;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-pill);
-  padding: 0.6em 1.5em;
+  border: 0;
+  border-radius: var(--border-radius-m);
+  padding: 6px 12px;
+  min-width: 112px;
+  height: 36px;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
-  font-size: var(--body-font-size-s);
-  line-height: 1.25;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--body-font-size-m);
+  line-height: 20px;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-accent);
+  background-color: var(--dark-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
@@ -222,21 +250,44 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--color-accent-dark);
+  background-color: var(--text-color-secondary);
   cursor: pointer;
+}
+
+a.button:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 2px;
 }
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
+  background-color: var(--color-border);
+  color: var(--text-color-tertiary);
   cursor: unset;
 }
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  background-color: transparent;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: var(--light-color);
+}
+
+a.button.primary,
+button.primary {
+  background-color: var(--color-accent);
+  color: var(--background-color);
+}
+
+a.button.primary:hover,
+button.primary:hover {
+  background-color: var(--color-accent-hover);
 }
 
 main img {
@@ -258,13 +309,13 @@ main img {
 
 /* sections */
 main > .section {
-  margin: var(--spacing-xl) 0;
+  margin: var(--spacing-l) 0;
 }
 
 main > .section > div {
   max-width: var(--content-max-width);
   margin: auto;
-  padding: 0 var(--spacing-s);
+  padding: 0 var(--content-padding);
 }
 
 main > .section:first-of-type {
@@ -273,7 +324,7 @@ main > .section:first-of-type {
 
 @media (width >= 1024px) {
   main > .section > div {
-    padding: 0 var(--spacing-m);
+    padding: 0 var(--content-padding);
   }
 }
 
@@ -282,12 +333,16 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-l) 0;
 }
 
 main .section.dark {
   background-color: var(--dark-color);
   color: var(--color-footer-text);
   margin: 0;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-l) 0;
+}
+
+main .section.dark a:any-link {
+  color: var(--color-footer-text);
 }
