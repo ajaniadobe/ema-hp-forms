@@ -61,6 +61,8 @@
         "promo-banner",
         "feature-grid",
         "steps",
+        "accordion",
+        "stats",
         "fragment",
         "form",
         "embed-adaptive-form"
