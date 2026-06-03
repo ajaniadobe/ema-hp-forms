@@ -1,0 +1,79 @@
+.steps .steps-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-m);
+    counter-reset: step;
+}
+
+.steps .steps-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    counter-increment: step;
+    position: relative;
+}
+
+.steps .steps-item::before {
+    content: counter(step);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: var(--background-color);
+    font-size: var(--heading-font-size-s);
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    flex-shrink: 0;
+}
+
+.steps .steps-item-icon {
+    margin-bottom: var(--spacing-xxs);
+}
+
+.steps .steps-item-icon .icon {
+    width: 48px;
+    height: 48px;
+}
+
+.steps .steps-item-content h3,
+.steps .steps-item-content h4 {
+    font-size: var(--heading-font-size-s);
+    margin-top: var(--spacing-xxs);
+    margin-bottom: var(--spacing-xxs);
+}
+
+.steps .steps-item-content p {
+    font-size: var(--body-font-size-s);
+    color: var(--dark-color);
+    margin-top: 0;
+    max-width: 280px;
+}
+
+@media (width >= 768px) {
+    .steps .steps-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 1024px) {
+    .steps .steps-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .steps .steps-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: calc(50% + 36px);
+        width: calc(100% - 72px);
+        height: 2px;
+        background-color: var(--color-border);
+    }
+}

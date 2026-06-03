@@ -16,6 +16,8 @@
       "cards",
       "columns",
       "promo-banner",
+      "feature-grid",
+      "steps",
       "fragment",
       "form",
       "embed-adaptive-form"
