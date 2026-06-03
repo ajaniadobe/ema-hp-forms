@@ -9,22 +9,22 @@
     align-items: center;
     justify-content: center;
     gap: var(--spacing-xs);
-    padding: var(--spacing-xxs) var(--spacing-l);
-    background-color: var(--color-sale);
-    color: var(--background-color);
+    padding: var(--spacing-xs) var(--spacing-xl);
+    background-color: var(--light-color);
+    color: var(--text-color);
     font-size: var(--body-font-size-s);
-    font-weight: 500;
+    font-weight: var(--font-weight-regular);
     text-align: center;
 }
 
 .promo-banner a:any-link {
-    color: var(--background-color);
+    color: var(--text-color);
     text-decoration: underline;
-    font-weight: 700;
+    font-weight: var(--font-weight-medium);
 }
 
 .promo-banner a:hover {
-    opacity: 0.9;
+    color: var(--text-color-secondary);
 }
 
 .promo-banner .promo-banner-content p {
@@ -33,21 +33,23 @@
 
 .promo-banner .promo-banner-close {
     position: absolute;
-    right: var(--spacing-xs);
+    right: var(--spacing-m);
     top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: var(--background-color);
+    color: var(--text-color);
     font-size: 20px;
     line-height: 1;
     padding: 4px 8px;
     cursor: pointer;
     margin: 0;
     border-radius: 0;
+    min-width: unset;
+    height: auto;
 }
 
 .promo-banner .promo-banner-close:hover {
     background: none;
-    opacity: 0.8;
+    color: var(--text-color-secondary);
 }

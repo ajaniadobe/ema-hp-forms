@@ -33,6 +33,14 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Light",
+              "value": "light"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
             }
           ]
         }
@@ -50,6 +58,9 @@
         "hero",
         "cards",
         "columns",
+        "promo-banner",
+        "feature-grid",
+        "steps",
         "fragment",
         "form",
         "embed-adaptive-form"
