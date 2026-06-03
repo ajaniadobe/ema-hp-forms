@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/:/"
+    "/content/ema-hp-forms/:/"
   ],
   "includes": [
-    "/content/",
-    "/content/dam/",
+    "/content/ema-hp-forms/",
+    "/content/dam/ema-hp-forms/",
     "/content/forms/"
   ]
 }
