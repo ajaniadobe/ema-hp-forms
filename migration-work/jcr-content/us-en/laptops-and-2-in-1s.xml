@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent" jcr:title="Laptop computers and 2-in-1 PCs">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" image="/content/dam/ema-hp-forms/heroes/hp-laptops-hero.jpg" imageAlt="HP OmniBook laptop in use" model="hero" modelFields="[image,imageAlt,text]" name="Hero" text="&lt;h1&gt;Laptop computers and 2-in-1 PCs&lt;/h1&gt;&lt;p&gt;Whatever you're doing, wherever you're going, there's an HP laptop and 2-in-1 PC that can get you there.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.hp.com/us-en/shop/cat/laptops&quot;&gt;View all laptops&lt;/a&gt;&lt;/p&gt;"/>
+      </section>
+      <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="OmniBook Series" titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" name="Feature Grid" model="feature-grid" modelFields="[image,imageAlt,title,specs,cta,ctaText]">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" image="/content/dam/ema-hp-forms/categories/hp-omnibook3.jpg" imageAlt="HP OmniBook 3" title="OmniBook 3" specs="&lt;p&gt;Simple, reliable and built for everyday life.&lt;/p&gt;" ctaText="Shop" cta="https://www.hp.com/us-en/shop/cat/laptops"/>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" image="/content/dam/ema-hp-forms/categories/hp-omnibook5.jpg" imageAlt="HP OmniBook 5" title="OmniBook 5" specs="&lt;p&gt;Enjoy performance and versatility for families and students.&lt;/p&gt;" ctaText="Shop" cta="https://www.hp.com/us-en/shop/cat/laptops"/>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" image="/content/dam/ema-hp-forms/categories/hp-omnibook7.jpg" imageAlt="HP OmniBook 7" title="OmniBook 7" specs="&lt;p&gt;Engineered for durability and performance for power users and university students.&lt;/p&gt;" ctaText="Shop" cta="https://www.hp.com/us-en/shop/cat/laptops"/>
+          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" image="/content/dam/ema-hp-forms/categories/hp-omnibookultra.jpg" imageAlt="HP OmniBook Ultra" title="OmniBook Ultra" specs="&lt;p&gt;Beautifully crafted and most powerful laptop for freelancers and creators.&lt;/p&gt;" ctaText="Shop" cta="https://www.hp.com/us-en/shop/cat/laptops"/>
+        </block>
+      </section_1>
+      <section_2 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[light]" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Find Your Perfect Laptop" titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/ema-hp-forms/categories/hp-laptops-home.jpg" text="&lt;p&gt;&lt;strong&gt;Entertainment &amp;amp; Personal Use&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Laptops for browsing, streaming, and staying connected with family and friends.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.hp.com/us-en/shop/cat/laptops&quot;&gt;Shop&lt;/a&gt;&lt;/p&gt;"/>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/ema-hp-forms/categories/hp-laptops-work.jpg" text="&lt;p&gt;&lt;strong&gt;Professional Use&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Secure, manageable PCs engineered for the modern workforce.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.hp.com/us-en/shop/cat/laptops&quot;&gt;Shop&lt;/a&gt;&lt;/p&gt;"/>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/ema-hp-forms/categories/hp-laptops-gaming.jpg" text="&lt;p&gt;&lt;strong&gt;Gaming&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;OMEN and Victus laptops for high-performance gaming experiences.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://www.hp.com/us-en/shop/cat/laptops&quot;&gt;Shop&lt;/a&gt;&lt;/p&gt;"/>
+        </block>
+      </section_2>
+      <section_3 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="AI-Powered Performance" titleType="h2"/>
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/ema-hp-forms/categories/hp-copilot-feature.jpg" imageAlt="Copilot+ PCs from HP"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Copilot+ PCs are the fastest, most intelligent Windows PCs ever" titleType="h3"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;TOPS — Trillion Operations Per Second — the units used to measure AI processing power in hardware. HP OmniBook laptops with dedicated NPUs deliver the AI performance you need for smarter workflows.&lt;/p&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="https://www.hp.com/us-en/shop/cat/laptops" linkText="Learn"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_3>
+    </root>
+  </jcr:content>
+</jcr:root>
