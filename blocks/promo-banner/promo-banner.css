@@ -1,0 +1,53 @@
+.promo-banner-container .promo-banner-wrapper {
+    max-width: unset;
+    padding: 0;
+}
+
+.promo-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xxs) var(--spacing-l);
+    background-color: var(--color-sale);
+    color: var(--background-color);
+    font-size: var(--body-font-size-s);
+    font-weight: 500;
+    text-align: center;
+}
+
+.promo-banner a:any-link {
+    color: var(--background-color);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.promo-banner a:hover {
+    opacity: 0.9;
+}
+
+.promo-banner .promo-banner-content p {
+    margin: 0;
+}
+
+.promo-banner .promo-banner-close {
+    position: absolute;
+    right: var(--spacing-xs);
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--background-color);
+    font-size: 20px;
+    line-height: 1;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 0;
+}
+
+.promo-banner .promo-banner-close:hover {
+    background: none;
+    opacity: 0.8;
+}
