@@ -2,5 +2,10 @@
   "previewOrg": "ajaniadobe",
   "previewSite": "ema-hp-forms",
   "type": "xwalk",
-  "contentHostUrl": "author-p142404-e1461341.adobeaemcloud.com"
+  "contentHostUrl": "author-p142404-e1461341.adobeaemcloud.com",
+  "aemSitePath": "/content/ema-hp-forms",
+  "aemAssetsFolderPath": "/content/dam/ema-hp-forms",
+  "aemSiteName": "ema-hp-forms",
+  "aemSiteTitle": "EMA HP Forms",
+  "baseUrl": "https://www.hp.com"
 }
