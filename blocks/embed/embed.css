@@ -1,0 +1,8 @@
+.embed {
+    max-width: 900px;
+    margin: var(--spacing-l) auto;
+}
+
+.embed[data-embed-loaded='false'] {
+    aspect-ratio: 16 / 9;
+}

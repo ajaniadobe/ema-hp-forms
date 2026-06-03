@@ -20,6 +20,10 @@
       "steps",
       "accordion",
       "stats",
+      "carousel",
+      "tabs",
+      "video",
+      "embed",
       "fragment",
       "form",
       "embed-adaptive-form"
@@ -35,6 +39,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-slide"
     ]
   },
   {
@@ -80,6 +90,12 @@
       "tnc",
       "wizard",
       "range"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab-item"
     ]
   }
 ]
