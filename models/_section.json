@@ -63,6 +63,10 @@
         "steps",
         "accordion",
         "stats",
+        "carousel",
+        "tabs",
+        "video",
+        "embed",
         "fragment",
         "form",
         "embed-adaptive-form"

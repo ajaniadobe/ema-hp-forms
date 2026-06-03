@@ -1,1 +1,30 @@
-/* add global styles that can be loaded post LCP here */
+/* Mega Menu Enhancement */
+@media (width >= 1024px) {
+    header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
+        width: auto;
+        min-width: 600px;
+        max-width: calc(var(--content-max-width) - 200px);
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: var(--spacing-m);
+        padding: var(--spacing-l);
+    }
+
+    header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
+        padding: var(--spacing-xxs) 0;
+    }
+
+    header nav .nav-sections .default-content-wrapper > ul > li > ul > li:first-child {
+        font-weight: var(--font-weight-medium);
+        padding-bottom: var(--spacing-xs);
+        border-bottom: 1px solid var(--color-border);
+        margin-bottom: var(--spacing-xxs);
+    }
+}
