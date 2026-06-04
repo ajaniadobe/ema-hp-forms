@@ -126,6 +126,12 @@
 =======
   },
   {
+    "id": "steps",
+    "components": [
+      "step-item"
+    ]
+  },
+  {
     "id": "tabs",
     "components": [
       "tab-item"
