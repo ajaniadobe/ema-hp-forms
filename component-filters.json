@@ -36,6 +36,12 @@
     ]
   },
   {
+    "id": "card-grid",
+    "components": [
+      "card-grid-item"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
