@@ -6,21 +6,13 @@ export default function decorate(block) {
   items.forEach((row) => {
     const li = document.createElement('li');
     li.className = 'steps-item';
-    const cells = [...row.children];
 
     const content = document.createElement('div');
     content.className = 'steps-item-content';
 
-    const titleCell = cells[0];
-    if (titleCell) {
-      const h4 = document.createElement('h4');
-      h4.textContent = titleCell.textContent;
-      content.append(h4);
-    }
-
-    const descCell = cells[1];
-    if (descCell) {
-      content.append(...descCell.childNodes);
+    const cell = row.children[0];
+    if (cell) {
+      content.append(...cell.childNodes);
     }
 
     li.append(content);
