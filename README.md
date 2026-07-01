@@ -3,6 +3,7 @@ Your project's description...
 
 ## Environments
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Preview: https://main--{repo}--{owner}.aem.page/
 - Live: https://main--{repo}--{owner}.aem.live/
 
@@ -21,6 +22,10 @@ Before using the aem-boilerplate, we recommend you to go through the documentati
 =======
 - Preview: https://main--aem-boilerplate-forms--adobe-rnd.aem.page/
 - Live: https://main--aem-boilerplate-forms--adobe-rnd.aem.live/
+=======
+- Preview: https://main--ema-hp-forms--ajaniadobe.aem.page/
+- Live: https://main--ema-hp-forms--ajaniadobe.aem.live/
+>>>>>>> e828d43 (Replace old environment links with new ones)
 
 ## Documentation
 Before using the aem-boilerplate, we recommand you to go through the documentation on [www.aem.live](https://www.aem.live/docs/) and [experienceleague.adobe.com](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring), more specifically:
@@ -111,4 +116,7 @@ The AEM Forms runtime core libraries (`@aemforms/af-core` and `@aemforms/af-form
 
 5. **Verify the Update**
    - Check that files in `blocks/form/rules/model/` have been updated
+<<<<<<< HEAD
 >>>>>>> 1c4e366 (Initial commit)
+=======
+>>>>>>> e828d43 (Replace old environment links with new ones)
