@@ -26,11 +26,22 @@
 =======
       "feature-grid",
       "steps",
+<<<<<<< HEAD
 >>>>>>> 9bbb7cb (Add feature-grid, steps blocks)
+=======
+      "accordion",
+      "stats",
+>>>>>>> 10c8185 (Add accordion, stats blocks)
       "fragment",
       "form",
       "embed-adaptive-form"
 >>>>>>> 1c4e366 (Initial commit)
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
     ]
   },
   {
