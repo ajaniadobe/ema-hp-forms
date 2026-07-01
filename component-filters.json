@@ -22,8 +22,12 @@
 =======
       "promo-banner",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7a63d52 (Add 5 blocks)
 =======
+=======
+      "card-grid",
+>>>>>>> 4d95525 (Add card-grid to section filter and fix section model source)
       "feature-grid",
       "steps",
 <<<<<<< HEAD
