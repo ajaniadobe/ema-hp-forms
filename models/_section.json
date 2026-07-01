@@ -33,6 +33,14 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Light",
+              "value": "light"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
             }
           ]
         }
@@ -51,8 +59,14 @@
         "cards",
         "columns",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "fragment"
 =======
+=======
+        "promo-banner",
+        "feature-grid",
+        "steps",
+>>>>>>> 9bbb7cb (Add feature-grid, steps blocks)
         "fragment",
         "form",
         "embed-adaptive-form"

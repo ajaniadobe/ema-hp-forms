@@ -21,7 +21,12 @@
 =======
 =======
       "promo-banner",
+<<<<<<< HEAD
 >>>>>>> 7a63d52 (Add 5 blocks)
+=======
+      "feature-grid",
+      "steps",
+>>>>>>> 9bbb7cb (Add feature-grid, steps blocks)
       "fragment",
       "form",
       "embed-adaptive-form"
