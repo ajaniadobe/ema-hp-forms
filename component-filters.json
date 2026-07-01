@@ -16,8 +16,12 @@
       "cards",
       "columns",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "fragment"
 =======
+=======
+      "promo-banner",
+>>>>>>> 7a63d52 (Add 5 blocks)
       "fragment",
       "form",
       "embed-adaptive-form"

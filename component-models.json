@@ -4940,5 +4940,31 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "promo-banner",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Banner Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "link",
+        "label": "Link URL",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkText",
+        "label": "Link Text",
+        "value": "Shop now"
+      }
+    ]
   }
 ]
