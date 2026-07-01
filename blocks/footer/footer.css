@@ -1,22 +1,22 @@
 footer {
     background-color: var(--color-footer-bg);
     color: var(--color-footer-text);
-    font-size: var(--body-font-size-xs);
+    font-size: var(--body-font-size-s);
 }
 
 footer .footer > div {
     margin: auto;
     max-width: var(--content-max-width);
-    padding: var(--spacing-l) var(--spacing-s) var(--spacing-s);
+    padding: var(--spacing-l) var(--content-padding) var(--content-padding);
 }
 
 footer .footer a:any-link {
     color: var(--color-footer-text);
     text-decoration: none;
+    font-weight: var(--font-weight-regular);
 }
 
 footer .footer a:hover {
-    color: var(--color-accent);
     text-decoration: underline;
 }
 
@@ -34,21 +34,28 @@ footer .footer h2,
 footer .footer h3,
 footer .footer h4 {
     color: var(--color-footer-text);
-    font-size: var(--body-font-size-s);
-    font-weight: 700;
-    margin-bottom: var(--spacing-xs);
+    font-size: var(--body-font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-m);
 }
 
 footer .footer .columns-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-m);
+    gap: var(--spacing-l);
 }
 
 footer .footer .section:last-child {
     border-top: 1px solid rgb(255 255 255 / 20%);
-    padding-top: var(--spacing-s);
-    margin-top: var(--spacing-m);
+    padding-top: var(--spacing-m);
+    margin-top: var(--spacing-l);
+}
+
+footer .footer .section:last-child p {
+    color: var(--text-color-secondary);
+    font-size: var(--body-font-size-xs);
 }
 
 footer .footer .icon img {
@@ -65,7 +72,7 @@ footer .footer .icon img {
 
 @media (width >= 1024px) {
     footer .footer > div {
-        padding: var(--spacing-xl) var(--spacing-m) var(--spacing-s);
+        padding: var(--spacing-l) var(--content-padding) var(--content-padding);
     }
 
     footer .footer .columns-wrapper {

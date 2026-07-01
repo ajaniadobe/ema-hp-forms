@@ -15,36 +15,38 @@
     margin: 0;
     padding: 0;
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--spacing-s);
 >>>>>>> 7a63d52 (Add 5 blocks)
+=======
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+>>>>>>> d0bc4e4 (updated design to be more accurate, added font)
 }
 
 .cards > ul > li {
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius-m);
-    background-color: var(--background-color);
+    background-color: var(--color-surface);
     overflow: hidden;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .cards > ul > li:hover {
-    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
-    transform: translateY(-2px);
+    background-color: var(--color-surface-hover);
 }
 
 .cards .cards-card-body {
-    padding: var(--spacing-s);
+    padding: var(--spacing-m);
 }
 
 .cards .cards-card-body h3,
 .cards .cards-card-body h4 {
     font-size: var(--heading-font-size-m);
+    font-weight: var(--font-weight-medium);
     margin-top: 0;
 }
 
 .cards .cards-card-body p {
-    color: var(--dark-color);
+    color: var(--text-color-secondary);
     font-size: var(--body-font-size-s);
 }
 
@@ -58,9 +60,14 @@
     object-fit: cover;
 }
 
+@media (width >= 768px) {
+    .cards > ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (width >= 1024px) {
     .cards > ul {
         grid-template-columns: repeat(3, 1fr);
-        gap: var(--spacing-m);
     }
 }
