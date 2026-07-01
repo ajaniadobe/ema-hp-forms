@@ -186,6 +186,11 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+
+  if (window.hlx.aemRoot) {
+    // eslint-disable-next-line import/no-cycle
+    import('./editor-support.js');
+  }
 }
 
 /**
