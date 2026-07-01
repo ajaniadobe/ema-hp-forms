@@ -31,7 +31,14 @@
 =======
       "accordion",
       "stats",
+<<<<<<< HEAD
 >>>>>>> 10c8185 (Add accordion, stats blocks)
+=======
+      "carousel",
+      "tabs",
+      "video",
+      "embed",
+>>>>>>> ad88eb9 (Add 4 blocks)
       "fragment",
       "form",
       "embed-adaptive-form"
@@ -48,6 +55,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-slide"
     ]
   },
   {
@@ -96,6 +109,15 @@
       "wizard",
       "range"
     ]
+<<<<<<< HEAD
 >>>>>>> 1c4e366 (Initial commit)
+=======
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab-item"
+    ]
+>>>>>>> ad88eb9 (Add 4 blocks)
   }
 ]

@@ -71,7 +71,14 @@
 =======
         "accordion",
         "stats",
+<<<<<<< HEAD
 >>>>>>> 10c8185 (Add accordion, stats blocks)
+=======
+        "carousel",
+        "tabs",
+        "video",
+        "embed",
+>>>>>>> ad88eb9 (Add 4 blocks)
         "fragment",
         "form",
         "embed-adaptive-form"
